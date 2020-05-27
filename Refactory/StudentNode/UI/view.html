@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.angularjs.org/1.2.18/angular.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-touch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js"></script> -->
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+<script src="./logic.js"></script>
+
+<body ng-app="MyApp" ng-controller="MyCtrl">
+    <center>
+        <div>
+            <h3>List of students</h3>
+            <button type="submit" ng-click="getStudent()">GetStudentDetails</button>
+
+            <table style="width:25%">
+                <tr>
+                    <th> Name</th>
+                    <th>Gender</th>
+                    <th>Actions</th>
+                </tr>
+                <tr ng-repeat="student in students">
+
+                    <td>{{student.name}}</td>
+                    <td>{{student.gender}}</td>
+                    <!-- {{ student.name + ', Gender : ' + student.gender }} -->
+                    <!-- <button data-toggle="modal" data-target="#myModal" >Edit</button> -->
+                    <td>
+                        <!-- <button data-toggle="modal" data-target="#myModal" >Edit</button> -->
+                        <button ng-click='openEditModal(student)'>Edit</button>
+                        <!-- <button ng-click="editDialog.open(student) ">Edit</button> -->
+                        <button ng-click="deleteStudent(student.id) ">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <edit-person-dialog model="editDialog"></edit-person-dialog> -->
+
+        <!-- <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit form</h4>
+                </div>
+                <div class="modal-body">
+                    Name :<input type="text" ng-model="editedName" placeholder="Name">
+                    </br>
+                    </br>
+                    Gender :<input type="text" ng-model="editedGender" placeholder="F/M">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" data-ng-click="updateStudent(student.id)">Edit Student</button>
+                </div>
+            </div>
+
+        </div>
+    -->
+        </div>
+        <form>
+            <h3>Create Student</h3>
+            Name :<input type="text" ng-model="name" placeholder="Enter Name.." required = "required">
+            <a class="clear" data-ng-click="clearName()">X</a>
+            </br>
+            </br>
+            Gender :<input type="text" ng-model="gender" placeholder="F/M" required = "required">
+            <a class="clear" data-ng-click="clearGender()">X</a>
+            <br>
+            </br>
+            <button type="submit" value = "Clear" ng-click="insertStudent()">Add Student</button>
+        </form>
+
+        <!-- <form ng-submit="UpdateData()">
+        <input type="text" ng-model="editedName" placeholder="Enter Name..">
+        <input type="text" ng-model="editedGender" placeholder="F/M">
+        <button type="submit" ng-click="updateStudent()">Edit Student</button>
+    </form> -->
+
+        <!-- <div ng-app="myDlt" ng-controller="myDltCtrl">
+        <h3>student to be deleted</h3>
+        <input type = "text" ng-model = "id">
+        <input type = "submit" value = "Delete">
+         <h1>{{myWelcome}}</h1> -->
+        <!-- <ul>
+            <li ng-repeat="x in myWelcome">
+                {{ 'Name : '+ x.name + ', Gender : ' + x.gender }}
+            </li>
+        </ul> 
+    </div> -->
+
+        <!-- <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            $http.get('http://localhost:8080/user/')
+                .then(function (response) {
+                    console.log(response.data)
+                    $scope.myWelcome = response.data;
+                });
+        });
+
+        var dlt = angular.module('myDlt', []);
+        dlt.controller('myDltCtrl', function ($scope, $http) {
+            $http.delete('http://localhost:8080/user/', { params: { userId: id } })
+                .then(function (response) {
+                    console.log(response.data);
+                }, function (rejection) {
+                    console.log(rejection.data);
+                });
+        });
+    </script> -->
+    </center>
+</body>
+
+</html>
