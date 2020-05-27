@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Calculator.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Calculator.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculator.Lib/1.0.0": {
+      "type": "project",
+      "path": "../Calculator.Lib/Calculator.Lib.csproj",
+      "msbuildProject": "../Calculator.Lib/Calculator.Lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Calculator.Lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\bsikhakolli\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\training\\dotnettraining\\Calculator\\Calculator.csproj",
+      "projectName": "Calculator",
+      "projectPath": "D:\\training\\dotnettraining\\Calculator\\Calculator.csproj",
+      "packagesPath": "C:\\Users\\bsikhakolli\\.nuget\\packages\\",
+      "outputPath": "D:\\training\\dotnettraining\\Calculator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\bsikhakolli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\training\\dotnettraining\\Calculator.Lib\\Calculator.Lib.csproj": {
+              "projectPath": "D:\\training\\dotnettraining\\Calculator.Lib\\Calculator.Lib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

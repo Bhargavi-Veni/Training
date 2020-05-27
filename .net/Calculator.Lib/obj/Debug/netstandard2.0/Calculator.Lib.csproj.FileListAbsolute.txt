@@ -1,0 +1,16 @@
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\bin\Debug\netstandard2.0\Calculator.Lib.deps.json
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\bin\Debug\netstandard2.0\Calculator.Lib.dll
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\bin\Debug\netstandard2.0\Calculator.Lib.pdb
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.csprojAssemblyReference.cache
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.AssemblyInfoInputs.cache
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.AssemblyInfo.cs
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.dll
+C:\Users\roomhydkrishna\Documents\DotnetTraing\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.pdb
+D:\training\dotnettraining\Calculator.Lib\bin\Debug\netstandard2.0\Calculator.Lib.deps.json
+D:\training\dotnettraining\Calculator.Lib\bin\Debug\netstandard2.0\Calculator.Lib.dll
+D:\training\dotnettraining\Calculator.Lib\bin\Debug\netstandard2.0\Calculator.Lib.pdb
+D:\training\dotnettraining\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.csprojAssemblyReference.cache
+D:\training\dotnettraining\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.AssemblyInfoInputs.cache
+D:\training\dotnettraining\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.AssemblyInfo.cs
+D:\training\dotnettraining\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.dll
+D:\training\dotnettraining\Calculator.Lib\obj\Debug\netstandard2.0\Calculator.Lib.pdb
